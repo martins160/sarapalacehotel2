@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SARA PALACE HOTEL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">	
+
+
+
+	<!--ESTILO DA PAGINA-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--ESTILO DO BOOTSTRAP-->
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+
+	
+
+	<!--ESTILO FONTE AWESOME-->
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+
+
+
+
+   
+
+
+    <!--ESTILO IMAGEM HOVER PLUS-->
+    <link rel="stylesheet" href="assets/css/imagesHover.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+
+    <link rel="stylesheet" href="assets/wow/css/libs/animate.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+
+
+
+</head>
+<body>
+
+
+<header class="header">
+<div class="linha-header"></div> 
+<div class="container-fluid header-cont"> 
+	<a href="index.html">
+		<img src="assets/images/logo.png" class="img-responsive center-block logo wow fadeInUp">
+	</a>
+</div>
+
+    <!--<nav class="nav">
+        <a href="#" class="ssm-toggle-nav fechar" title="open nav"><i class="fa fa-times"></i></a>
+
+        <div class="nav-menu">
+            <a href="index.html">HOME</a>
+            <a href="estrutura.html">ESTRUTURA</a>
+            <a href="precos.html">PREÇOS/RESERVAS</a>
+            <a href="localizacao.html">LOCALIZAÇÃO</a>
+            <a href="contato.html">FALE CONOSCO</a> 
+        </div>        
+    </nav>
+
+    <div class="menu">              
+        <a href="#" class="ssm-toggle-nav" title="Menu Principal"><i class="fa fa-bars"></i>MENU PRINCIPAL</a>    
+    </nav>-->
+
+<!--<div class="mainmenu">
+    <ul class="mainmenu-flex">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="estrutura.html">ESTRUTURA</a></li>
+        <li><a href="precos.html">PREÇOS/RESERVAS</a></li>
+        <li><a href="localizacao.html">LOCALIZAÇÃO</a></li>
+        <li><a href="contato.html">FALE CONOSCO</a> </li> 
+    </ul>    
+</div>-->
+    <div class="minimenu">              
+        <a href="#" class="ssm-toggle-nav" title="Menu Principal"><i class="fa fa-bars"></i>MENU PRINCIPAL</a>    
+    </div>
+
+    <div id="menu-mobile-mask" class="visible-xs"></div>
+
+    <div id="menu-mobile" class="visible-xs">
+        <ul class="list-unstyled">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ESTRUTURA</a></li>
+            <li><a href="">PREÇOS/RESERVAS</a></li>
+            <li><a href="">LOCALIZAÇÃO</a></li>
+            <li><a href="">FALE CONOSCO</a></li> 
+        </ul>
+        <div class="bar-close">
+            <button type="button" class="btn btn-close"><i class="fa fa-close"></i></button>
+        </div>
+    </div>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ESTRUTURA</a></li>
+            <li><a href="">PREÇOS/RESERVAS</a></li>
+            <li><a href="">LOCALIZAÇÃO</a></li>
+            <li><a href="">FALE CONOSCO</a></li> 
+        </ul>
+    </nav>    
+
+
+    
+
+</header>
+
+
+
+
+
+
+<div class="conteudo">
+
+
+<div class="slider">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>        
+      </ol>
+
+      
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="assets/images/temp/b1.png" alt="...">          
+        </div>
+        <div class="item">
+          <img src="assets/images/temp/b1.png" alt="...">          
+        </div> 
+      </div>
+
+      
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+    <div class="reserva-slide wow bounceInRight" id="reservas">
+        <form>
+
+        <label class="r1">RESERVAS</label>
+          
+        <div class="form-inline">
+
+              <div class="form-group">
+                <p class="r2">Entrada</p>
+                <div class='input-group date'>
+                    <input type='text' class="form-control r4" placeholder="Data de chegada" id="datepicker" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <p class="r2">Saída</p>
+                <div class='input-group date'>
+                    <input type='text' class="form-control r4" placeholder="Data de saída" id="datepicker2" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+              </div>
+
+        </div> 
+
+
+        <div class="form-inline">              
+
+            <div class="form-group">
+                <p class="r2">Quartos</p> 
+                <input class="form-control r3" type="number" value="1">
+            </div>
+
+            <div class="form-group">
+                <p class="r2">Hóspedes</p> 
+                <input class="form-control r3" type="number" value="1">
+            </div>
+     
+        </div> 
+
+        <div class="form-inline">
+
+            <div class="form-group">
+                <p class="r2">Email</p> 
+                <input class="form-control r3" type="email" placeholder="email@exemplo.com.br">
+            </div>
+
+            <div class="form-group">
+                <p class="r2">Telefone</p> 
+                <input class="form-control r3" type="text" placeholder="(99) 99999-9999">
+            </div>
+
+        </div> 
+
+        <div class="form-group">
+            <input type="submit" class="btn-reserva form-control" value="SOLICITAR UMA RESERVA" /> 
+        </div>            
+         
+        </form>
+    </div>
+
+</div>
+
+
+
+<div class="sociais">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 social-bg1">
+                <a href="" target="_blank">
+                    <div class="social-1 wow fadeInUp">
+                        <i class="fa fa-instagram social-2" aria-hidden="true"></i>
+                        <p>SIGA A GENTE NO INSTAGRAM</p>
+                    </div>
+                </a>
+            </div> 
+            <div class="col-md-4  social-bg2">
+                <a href="" target="_blank">
+                    <div class="social-1 wow fadeInUp">
+                        <i class="fa fa-facebook social-3" aria-hidden="true"></i>
+                        <p>CURTA NO FACEBOOK</p>
+                       <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FHotel-Sara-Palace-198824960168750%2F&width=58&layout=button&action=like&size=small&show_faces=true&share=false&height=65&appId" width="58" height="65" style="border:none;overflow:hidden" class="iconface" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                </a>
+            </div>  
+            <div class="col-md-4  social-bg3">
+                <a href="" target="_blank">
+                    <div class="social-1 wow fadeInUp">
+                        <i class="fa fa-google-plus social-4" aria-hidden="true"></i>
+                        <p>RECOMENDE NO GOOGLE +</p>
+
+
+
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'pt-BR'}
+</script>
+
+
+<div class="g-plusone icongoo" data-href="" data-annotation="none"></div>
+
+
+                    </div>
+                </a>                
+            </div>  
+        </div>
+    </div>
+</div>
+
+
+<div class="conceito">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>UM NOVO CONCEITO <strong>EM HOSPEDAGEM</strong></h1>    
+
+                <p class="wow fadeInLeft">Na dinâmica empresarial, a prestação de bons serviços representa o principal objetivo de uma sociedade com sua clientela, é o 
+nosso caso, levando em consideração a qualidade de serviços por nós oferecidos.  Afim de atendermos a todos com a mesma atenção e carinho, colocamos a sua disposição uma equipe de funcionários altamente qualificados, prontos para lhe ajudar no que for preciso e garantir que sua estadia seja sempre confortável e agradável.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="conceito2" id="estrutura">ESTRUTURA <strong>MODERNA</strong></div>
+
+<div class="quartos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>WIFI GRÁTIS, AR-CONDICIONADO E TV A CABO EM TODOS OS QUARTOS.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="quartos-flex">
+                    <div class="quartos-mod wow fadeInUp">
+                        <img src="assets/images/temp/quarto1.jpg" class="img-responsive">
+                        <span class="quartos-titu">Nossas Suítes</span>
+                        <span class="quartos-txt">
+                            Todos os quartos foram feitos para o seu 
+                            conforto e comodidade na sua estadia. 
+                            As suítes possuem Tv com canais a cabo, ar 
+                            condicionado, wifi, banheiro privativo
+                            e cabideiro.
+                        </span>
+                        <a href="estrutura.html" class="btn-ver">VER</a>
+                    </div>
+                    <div class="quartos-mod wow fadeInUp">
+                        <img src="assets/images/temp/quarto2.jpg" class="img-responsive">
+                        <span class="quartos-titu">Espaço Interno</span>
+                        <span class="quartos-txt">
+                            Pensando na sua comodidade, o Sara Palace
+                            Hotel oferece um espaço interno 
+                            aconchegante e elegante.
+                        </span>
+                        <a href="espaco-interno.html" class="btn-ver">VER</a>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="linha-quarto"></div>
+
+
+<div class="precos" id="preco">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="precos-titu">PREÇOS <strong>ESPECIAIS</strong></div>
+                <div class="precos-flex">
+                    <div class="precos-box wow slideInLeft">
+                        <div class="box1">
+                            <span class="box1-txt1">INDIVIDUAL</span> 
+                            <span class="box1-txt2">Com café da manhâ grátis</span> 
+                        </div>
+                        <div class="box2">129.00 <span class="box22">BRL</span></div>
+                        <a href="reserva.html">SOLICITAR RESERVA</a>
+                    </div>
+                    <div class="precos-box wow slideInDown">
+                        <div class="box1">
+                            <span class="box1-txt1">DUPLO OU CASAL</span> 
+                            <span class="box1-txt2">Com café da manhâ grátis</span> 
+                        </div>
+                        <div class="box2">149.00 <span class="box22">BRL</span></div>
+                        <a href="reserva2.html">SOLICITAR RESERVA</a>
+                    </div>
+                    <div class="precos-box wow slideInRight">
+                        <div class="box1">
+                            <span class="box1-txt1">TRIPLO</span> 
+                            <span class="box1-txt2">Com café da manhâ grátis</span> 
+                        </div>
+                        <div class="box2">169.00 <span class="box22">BRL</span></div>
+                        <a href="reserva3.html">SOLICITAR RESERVA</a>
+                    </div>
+                </div>
+
+                <div class="box3-flex wow slideInLeft">
+                    <div class="box3-desc">
+                        SABÁDO OU DOMINGO APARTAMENTO CASAL E DUPLO
+                        <span class="box3-desc2">Com café da manhã grátis</span>
+                    </div>
+                    <div class="box3-valor">
+                        129.00
+                        <span class="box3-valor2">BRL</span>
+                    </div>
+                    <div class="box3-reserva">
+                        <a href="reserva4.html">SOLICITAR RESERVA</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="linha-quarto"></div>
+
+<div class="loc" id="localizacao">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                LOCALIZAÇÃO <strong>PRIVILEGIADA</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="end">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 wow fadeInUp">
+                <span class="end1">
+                    Localizado em Uberlândia- MG, em uma das principais vias da cidade, o Sara Palace Hotel é um ponto de fácil acesso para todos os lugares da cidade.
+                </span>
+                <span class="end2">                    
+                    Av. João Naves de Ávila, 4921, Bairro Santa Mônica, Cep: 38408-288, Uberlândia - MG
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="linha-quarto"></div>
+
+<div class="contact" id="contato">
+    <div class="container">        
+        <div class="row wow fadeInUp">
+            <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <span class="contact-titu">FALE <strong>CONOSCO</strong></span>
+
+                    <form>
+                      <div class="form-group">    
+                        <input type="text" class="form-control form-contact" placeholder="Nome">    
+                      </div>
+                        <div class="form-group">    
+                        <input type="email" class="form-control form-contact" placeholder="Email">    
+                      </div>
+                      <div class="form-group">    
+                        <input type="text" class="form-control form-contact" placeholder="Telefone">    
+                      </div> 
+                      <div class="form-group">   
+                        <textarea class="form-control form-contact" rows="5" placeholder="Como podemos te ajudar?"></textarea>
+                      </div> 
+                      <button type="submit" class="btn-cont">ENVIAR</button>
+                    </form>
+                </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</div>
+
+</div><!--FIM CONTEÚDO-->
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 wow slideInLeft">
+                <span class="footer-hotel">
+                    Sara Palace Hotel
+                </span>
+                <span class="footer-end">
+                    Av. João Naves de Ávila, 4.921<br/>                    
+                    Bairro Santa Mônica, Uberlândia - MG<br/>
+                    (34) 3227-0915 sara@redeshoteis.com.br                   
+                </span>
+                <span class="footer-social">
+                    <a href=""><i class="fa fa-instagram footer-rede" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-facebook footer-rede" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-google-plus footer-rede" aria-hidden="true"></i></a>
+                </span>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp">
+                <span class="footer-image">
+                    <img src="assets/images/logo2.png">
+                </span>
+                <span class="footer-copy">
+                    &copy Copyright 2017 | Política de Privacidade
+                </span>                
+            </div>
+
+            <div class="col-md-4 wow slideInRight">                
+                <span class="news-titu">Acompanhe nossas novidades e promoções.</span>
+                <form>
+                  <div class="form-group">    
+                    <input type="text" class="form-control form-news" placeholder="Nome">    
+                  </div>
+                    <div class="form-group">    
+                    <input type="email" class="form-control form-news" placeholder="Email">    
+                  </div>                      
+                  <button type="submit" class="btn-news">Cadastrar</button>
+                </form>                
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<!--PLUGIN JQUERY-->
+
+<script src="assets/js/jquery.min.js"></script>
+
+<!--PLUGIN BOOTSTRAP-->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+<!--PLUGIN MENU SWIPE-->
+<script src="assets/js/jquery.touchSwipe.min.js"></script>
+<script src="assets/js/jquery.slideandswipe.js"></script>
+
+
+<!--PLUGIN PARALLAX-->
+<script src="assets/parallax/parallax.min.js"></script>
+
+<!--PLUGIN WOW-->
+<script type="text/javascript" src="assets/wow/dist/wow.min.js"></script> 
+
+
+
+
+
+<script>
+
+
+
+
+    //FIXAR MENU DESKTOP
+    $(function(){
+        if($(window).scrollTop() > $('.conteudo').offset().top){
+                $('.mainmenu').addClass('menu-fixed');
+            }else{
+                $('.mainmenu').removeClass('menu-fixed');
+            }
+
+        $(window).scroll(function(){            
+            if($(this).scrollTop() > $('.conteudo').offset().top){
+                $('.mainmenu').addClass('menu-fixed');
+            }else{
+                $('.mainmenu').removeClass('menu-fixed');
+            }
+        });
+    }); 
+
+
+    //PARALLAX
+    //$('.sobre').parallax({ 
+       // imageSrc: 'assets/images/b4.jpg',
+       // positionY: 'center'      
+    //});
+
+    //$('.equipe').parallax({ 
+     //   imageSrc: 'assets/images/b5.jpg',
+     //   positionY: 'center'      
+   // });
+
+
+    //INICIA O WOW
+    new WOW().init();
+
+
+
+    
+</script>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">  
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    
+       
+    
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+            $( "#datepicker2" ).datepicker();
+        } );
+
+    jQuery(function($){
+        $.datepicker.regional['pt-BR'] = {
+            closeText: 'Fechar',
+            prevText: '&#x3c;Anterior',
+            nextText: 'Pr&oacute;ximo&#x3e;',
+            currentText: 'Hoje',
+            monthNames: ['Janeiro','Fevereiro','Mar&ccedil;o','Abril','Maio','Junho',
+            'Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+            monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun',
+            'Jul','Ago','Set','Out','Nov','Dez'],
+            dayNames: ['Domingo','Segunda-feira','Ter&ccedil;a-feira','Quarta-feira','Quinta-feira','Sexta-feira','S&aacute;bado'],
+            dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','S&aacute;b'],
+            dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','S&aacute;b'],
+            weekHeader: 'Sm',
+            dateFormat: 'dd/mm/yy',
+            firstDay: 0,
+            isRTL: false,
+            showMonthAfterYear: false,
+            yearSuffix: ''};
+        $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+    });
+
+
+
+
+    $(".minimenu").on("click", function(){
+        $("header").toggleClass("open-menu")
+    });
+    $("#menu-mobile-mask, .btn-close").on("click", function(){
+        $("header").removeClass("open-menu")
+    });
+   </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

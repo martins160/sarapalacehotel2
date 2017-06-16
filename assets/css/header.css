@@ -1,0 +1,396 @@
+.header{
+	width: 100%;
+	background-color: #fff;    
+    background-attachment: fixed;
+}
+
+.logo{
+	margin: 10px 0 30px 0;
+	background-color: #fff;	
+	position: relative;
+	z-index: 1;
+}
+
+.header-cont a img{
+    width: 60%;
+}
+
+.linha-header{
+	width: 100%;
+	border-bottom: 2px solid #d3ad6e;
+	position: absolute;
+	top: 50px;
+	z-index: 1;
+}
+
+.mainmenu{
+    display: none;
+}
+
+
+
+
+#menu{
+    display: none;
+}
+
+
+
+
+
+
+
+.minimenu{
+    width: 100%;    
+    padding: 20px 0;
+    background-color: #034790;
+    border-bottom: 3px solid #d3ad6e; 
+}
+
+.minimenu a{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.minimenu a:hover{
+    color: #d3ad6e;
+    text-decoration: none;
+}
+
+.minimenu a:visited{
+    color: #d3ad6e;
+    text-decoration: none;
+}
+
+.minimenu a i{
+    margin: 0 10px 0 0;
+    font-weight: lighter;
+}
+
+header #menu-mobile{
+    position: fixed;
+    top: 0;
+    background-color: #034790;
+    width: 80%;
+    height: 100%;
+    left: -80%;
+    transition: 1s;
+    z-index: 2;
+}
+
+header.open-menu #menu-mobile{
+    left: 0;
+}
+
+
+header.open-menu #menu-mobile-mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header.open-menu #menu-mobile ul{
+    margin: 52px 0 0 0; 
+}
+
+header.open-menu #menu-mobile li{
+    text-align: center;    
+    border-bottom: 1px solid rgba(255,255,255,0.2);    
+ 
+}
+
+header.open-menu #menu-mobile li:hover{
+    background-color: #fff;
+}
+
+header.open-menu #menu-mobile li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+header.open-menu #menu-mobile li a:hover{
+    color: #034790; 
+}  
+
+header.open-menu .bar-close{
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    color: #034790;
+    width: 100%; 
+    text-align: right;   
+}
+
+header.open-menu .bar-close .btn-close{
+    background: none;
+    border: none;
+    font-size: 28px;
+    margin: 0 10px 0 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.menu{
+    width: 100%;    
+    padding: 20px 0;
+    background-color: #034790;
+    border-bottom: 3px solid #d3ad6e; 
+}
+
+.menu a{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.menu a:hover{
+    color: #d3ad6e;
+    text-decoration: none;
+}
+
+.menu a:visited{
+    color: #d3ad6e;
+    text-decoration: none;
+}
+
+.menu a i{
+    margin: 0 10px 0 0;
+    font-weight: lighter;
+}*/
+
+.fechar{
+    color: #fff;
+    font-size: 40px;
+    float: right;
+    margin: 0 50px 0 0;
+}
+
+.fechar:hover{
+    color: #fff;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+    padding: 20px 0 0 0;
+}
+
+
+.nav-menu a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.nav-menu a:hover{
+    text-decoration: none;
+    color: #d3ad6e;    
+}
+
+
+/*Classe que define o menu fixo*/
+.menu-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+
+
+
+/*RESPONSIVO 650*********************************************************************************/
+@media(min-width:650px){
+.header-cont a img{
+    width: auto;
+}
+
+
+
+}
+
+
+
+/*RESPONSIVO 720*********************************************************************************/
+@media(min-width:720px){
+.header-cont a img{
+    width: auto;
+}
+
+}
+
+
+
+
+
+/*RESPONSIVO 960*********************************************************************************/
+@media(min-width:960px){
+
+.header-cont a img{
+    width: auto;
+}
+
+/*.nav, .menu{
+    display: none;
+}*/
+
+.mainmenu{
+    display: block;
+    width: 100%;    
+    padding: 10px 0 10px 0;    
+    border-bottom: 2px solid #d3ad6e;
+    background-color: #fff;
+}
+
+
+
+
+
+.mainmenu-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mainmenu-flex li{
+    margin: 0 10px;
+}
+
+.mainmenu-flex li a{    
+    /*padding: 20px 15px 21px 15px;*/
+    text-align: center;
+    color: #d3ad6e;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300; 
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;     
+}
+
+.mainmenu-flex li a:hover{
+    color: #e05a10;
+}
+
+.mainmenu-flex li a::after{    
+    content: "";
+    display: table;
+    margin: 5px auto 0 auto;
+    width: 0%;
+    height: 1px;
+    background-color: #e05a10;
+    padding: 0;
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; 
+}
+
+.mainmenu-flex li a:hover::after{    
+   width: 60%;   
+}
+
+
+#menu{
+    display: block;
+}
+
+
+
+#menu li{
+    display: inline-block;
+    margin: 0 7px;
+}
+
+#menu li a{    
+    /*padding: 20px 15px 21px 15px;*/
+    text-align: center;
+    color: #d3ad6e;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300; 
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#menu li a:hover{
+    color: #e05a10;
+}
+
+#menu li a::after{    
+    content: "";
+    display: table;
+    margin: 5px auto 0 auto;
+    width: 0%;
+    height: 1px;
+    background-color: #e05a10;
+    padding: 0;
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; 
+}
+
+#menu li a:hover::after{    
+   width: 60%;   
+}
+
+.minimenu{
+    display: none;
+}
+
+
+
+
+
+
+
+
+}
